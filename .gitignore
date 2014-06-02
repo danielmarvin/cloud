@@ -5,7 +5,7 @@
 ################# my additions
 # don't include the node_modules
 node_modules/
-
+one.txt
 #################################
 
 # User-specific files
