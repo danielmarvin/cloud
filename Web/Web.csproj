@@ -129,9 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
-    <Content Include="foo\node_modules\lala.js" />
     <Content Include="Global.asax" />
-    <Content Include="node_modules\nm.js" />
     <Content Include="one.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
