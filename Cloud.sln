@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sites", "sites", "{8BD7AA25
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "one", "one", "{9E6BD4ED-CEAD-4B10-9E78-D23268A03239}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapp", "sites\one\webapp\webapp.csproj", "{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "sites\one\app\app.csproj", "{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
