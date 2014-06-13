@@ -3,9 +3,8 @@
 
 
 ################# my additions
-# don't include the node_modules
-node_modules/
-*.txt
+/node_modules/
+/sites/
 #################################
 
 # User-specific files

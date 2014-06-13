@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace Web
 {
@@ -19,6 +21,8 @@ namespace Web
 				 routeTemplate: "api/{controller}/{id}",
 				 defaults: new { id = RouteParameter.Optional }
 			);
+
+			config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 		}
 	}
 }
