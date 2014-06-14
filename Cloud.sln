@@ -23,12 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{42B0B90B-18ED-4E0C-92FD-8BD0439AFCD5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sites", "sites", "{8BD7AA25-40C6-4C0F-BB5B-CBCE5A529E35}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "one", "one", "{9E6BD4ED-CEAD-4B10-9E78-D23268A03239}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "sites\one\app\app.csproj", "{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,16 +41,8 @@ Global
 		{42B0B90B-18ED-4E0C-92FD-8BD0439AFCD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42B0B90B-18ED-4E0C-92FD-8BD0439AFCD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42B0B90B-18ED-4E0C-92FD-8BD0439AFCD5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{9E6BD4ED-CEAD-4B10-9E78-D23268A03239} = {8BD7AA25-40C6-4C0F-BB5B-CBCE5A529E35}
-		{529EEFBC-AD6C-45B9-BB28-9E3D76731AAA} = {9E6BD4ED-CEAD-4B10-9E78-D23268A03239}
 	EndGlobalSection
 EndGlobal

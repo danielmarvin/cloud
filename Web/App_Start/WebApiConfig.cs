@@ -22,7 +22,12 @@ namespace Web
 				 defaults: new { id = RouteParameter.Optional }
 			);
 
-			config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+			// remove the stupid xml response to browser
+			var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
+			config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
+			
+			// this isn't working for some reason:
+			//config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 		}
 	}
 }

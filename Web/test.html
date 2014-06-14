@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+
+
+
+
+
+	<script>
+		$.get("api/user").success(function (data) {
+			console.log(data);
+		});
+
+		var s = "[{\"name\":\"dank\",\"age\":50},{\"name\":\"carl\",\"age\":60}]";
+		var o = JSON.parse(s);
+		console.log(typeof o)
+		console.log("o", o);
+		console.log("o[0]", o[0]);
+
+
+
+	</script>
+
+</body>
+</html>

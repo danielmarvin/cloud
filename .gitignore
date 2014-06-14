@@ -1,8 +1,8 @@
 
 ###### my additions
 node_modules/
-bower_components
-/sites/
+bower_components/
+sites/
 #######
 
 
