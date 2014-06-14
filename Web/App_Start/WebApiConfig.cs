@@ -27,7 +27,7 @@ namespace Web
 			config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
 			
 			// this isn't working for some reason:
-			//config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+			config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 		}
 	}
 }

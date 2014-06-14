@@ -7,19 +7,16 @@ using System.Web.Http;
 using Newtonsoft.Json;
 using DataLayer;
 using Newtonsoft.Json.Serialization;
+using Entities;
 
 namespace Web.Controllers
 {
     public class UserController : ApiController
     {
         // GET: api/User
-        public string Get()
+		 public IEnumerable<User> Get()
         {
-			  //var s = JsonConvert.SerializeObject(new UserRepository().GetAll());
-
-			  var settings = new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() };
-			  var s = JsonConvert.SerializeObject((new UserRepository().GetAll()), Formatting.None, settings);
-				return s; 
+			  return new UserRepository().GetAll();
         }
 
         // GET: api/User/5
