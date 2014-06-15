@@ -15,5 +15,6 @@ namespace Web
 		{
 			GlobalConfiguration.Configure(WebApiConfig.Register);
 		}
+
 	}
 }

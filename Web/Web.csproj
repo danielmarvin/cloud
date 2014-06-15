@@ -15,7 +15,7 @@
     <AssemblyName>Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
@@ -129,12 +129,9 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="jquery.js" />
-    <Content Include="one.txt" />
-    <Content Include="sites\one\.gitignore" />
     <Content Include="sites\one\app\index.html" />
     <Content Include="sites\one\app\js\app.js" />
-    <Content Include="test.html" />
+    <Content Include="sites\one\app\serviceUrl.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -156,10 +153,8 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="sites\one\.bowerrc" />
-    <Content Include="sites\one\bower.json" />
-    <Content Include="sites\one\README.md" />
     <Content Include="sites\one\app\Web.config" />
+    <None Include="Properties\PublishProfiles\cloud profile.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -179,7 +174,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3404</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3404/</IISUrl>
+          <IISUrl>http://localhost/cloudservice</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
