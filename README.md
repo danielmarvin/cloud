@@ -10,5 +10,20 @@ I assume the the web.config file is the debug version, dis the web.debug.config 
 1. the connection string for debug/prod use
 2. the CORS setting for local (*) or username.github.io
 
+```xml
+<configuration>
+ <connectionStrings>
+ 	<add name="CloudServiceEntities" connectionString="..." providerName="..." />
+ </connectionStrings>
+</configuration>
+
+<system.webServer>
+	<httpProtocol>
+		<customHeaders>
+			<add name="Access-Control-Allow-Origin" value="*" />
+		</customHeaders>
+	</httpProtocol>
+</system.webServer>
+```
 
  
