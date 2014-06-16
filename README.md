@@ -6,6 +6,7 @@ The idea is to have the free msdn azure bucks support webapi serivces tied to sq
 
 ##### web.config
 I assume the the web.config file is the debug version, dis the web.debug.config file (use for qa?) and use web.release.config for prod. There's only two settings you'll have to address:
+
 1. the connection string for debug/prod use
 2. the CORS setting for local (*) or username.github.io
 
